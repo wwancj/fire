@@ -1,0 +1,345 @@
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: #d3d6dd;
+  background-color: #000000;
+}
+
+//滚动条的宽度
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+//滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: #B9BDC1;
+  border-radius: 3px;
+}
+
+// 二级菜单控制样式
+.popper-menu-class {
+  padding: 0;
+  width: 8% !important;
+  min-width: 0.26667rem !important;
+  background-color: rgba(19, 25, 47, 1) !important;
+  border: 1px solid #0080ff !important;
+  color: #d3d6dd;
+  padding: 0.13333rem;
+
+  .popper__arrow::after {
+    border-bottom-color: rgba(19, 25, 47, 0.6) !important;
+  }
+}
+
+.popper-loginout-class {
+  padding: 0;
+  width: 1.6rem !important;
+  min-width: 0.26667rem !important;
+  background-color: rgba(19, 25, 47, 0.6) !important;
+  border: 1px solid #0080ff !important;
+  color: #d3d6dd;
+  padding: 0.13333rem;
+
+  .popper__arrow::after {
+    border-bottom-color: rgba(19, 25, 47, 0.6) !important;
+  }
+}
+
+// 退出登录样式
+.loginout1-class {
+  border: 1px solid #4394e478;
+  text-align: center;
+  padding: 0.05333rem;
+  font-size: 0.22rem;
+  cursor: pointer;
+  margin: 0.13333rem 0;
+  border-radius: 0.08rem;
+  width: 1.33333rem;
+}
+
+.loginout1-class:hover {
+  border-color: #0080ff;
+  box-shadow: 1px 1px 3px 0px #0080ff;
+}
+
+// 滚动条样式
+.gm-scrollbar {
+  .thumb {
+    background-color: #81ed2f54 !important;
+  }
+
+  .thumb:hover {
+    background-color: #81ed2fa8 !important;
+  }
+}
+
+.main {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+
+// 将element table的 下滑线去掉
+body .el-table th.gutter {
+  display: table-cell !important;
+
+  #app {
+
+    /* Chrome */
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      .el-table--medium th {
+        padding: 11px 0;
+      }
+    }
+  }
+}
+
+.dv-capsule-chart .label-column {
+  font-size: .1563rem;
+  color: #39d8bd;
+}
+
+.dv-capsule-chart .unit-label {
+  font-size: .1875rem;
+  color: #39d8bd;
+}
+
+.dv-capsule-chart .capsule-item .capsule-item-column {
+  height: .125rem;
+}
+
+// .4688rem    30
+// .2344rem    15
+
+
+.xinwen {
+  height: 400px;
+
+  .h2 {
+    text-align: center;
+    color: #fac858;
+  }
+
+  .xinwen-1 {
+    height: 300px;
+    border: 2px solid #6f747c;
+    padding: 20px;
+    margin-top: 30px;
+    color: #ffffff99;
+
+    a {
+      color: #0080ff;
+    }
+  }
+}
+
+.shouye-top {
+  height: 2.8125rem;
+  // border: 1px solid red;
+  margin-top: 0;
+  width: 91%;
+
+  .top1-div {
+    width: 50%;
+    height: 1.4063rem;
+    display: inline-block;
+    padding: .3125rem;
+
+    .top2-div {
+      display: inline-block;
+      position: relative;
+      width: 1.0938rem;
+      cursor: pointer;
+
+      .top3-div {
+        // color: #3adabf;
+        // font-size: .1875rem;
+        // text-align: center;
+
+        position: absolute;
+        top: -0.3rem;
+        left: 0.7rem;
+        font-size: .16rem;
+        color: #3adabf;
+        text-align: center;
+        width: 1.0938rem;
+      }
+
+      .top4-div {
+        // position: absolute;
+        // top: -0.3125rem;
+        // // left: .4688rem;
+        // font-size: .375rem;
+        // color: #3adabf;
+        // text-align: center;
+        // width: 1.0938rem;
+
+
+        position: absolute;
+        top: -0.6rem;
+        left: 0.7rem;
+        font-size: .3125rem;
+        color: #3adabf;
+        text-align: center;
+        width: 1.0938rem;
+      }
+    }
+  }
+}
+
+
+.home-svgs-top1 {
+  font-size: .7rem;
+}
+
+
+.dv-scroll-ranking-board .ranking-info {
+  font-size: .1563rem
+}
+
+
+.huise-class .el-dialog {
+  background-color: #0D2F55;
+}
+
+.huise-class .el-dialog .el-dialog__title {
+  color: #50e3c2;
+}
+
+.huise-class {
+  .el-form-item__label {
+    color: #50e3c2;
+  }
+
+  .el-input__inner {
+    background: transparent;
+    border: 1px solid #50e3c288;
+    color: #ffffff99;
+  }
+
+  .el-textarea__inner {
+    background: transparent;
+    border: 1px solid #50e3c288;
+    color: #ffffff99;
+  }
+
+  .el-tabs--border-card {
+    background: transparent;
+    border: 1px solid #255D5D;
+
+    .yuyue-info-class div span {
+      color: #ffffff99;
+    }
+
+    .yuyue-info-class div span:nth-child(1) {
+      color: #50e3c2;
+    }
+
+    .el-step__title.is-process {
+      color: #ffffff99;
+    }
+
+    .el-step__title.is-process {
+      color: #ffffff99;
+    }
+
+    .el-step__description.is-process {
+      color: #ffffff99;
+    }
+
+    .el-tabs__header.is-top {
+      background-color: transparent;
+      border-bottom: 1px solid #255D5D;
+      color: #50e3c2;
+      font-weight: 700;
+    }
+
+    .el-tabs__item.is-active {
+      font-weight: 700;
+      font-size: 16px;
+      background-color: #df66663b;
+      border-right-color: #255D5D;
+      border-left-color: #255D5D;
+    }
+
+  }
+
+  .el-input.is-disabled .el-input__inner {
+    background-color: #6d788a;
+    border-color: #255D5D;
+    color: #ffffff99;
+    cursor: not-allowed;
+  }
+
+  .el-input .el-input__count .el-input__count-inner {
+    background-color: transparent;
+  }
+
+  .el-textarea .el-input__count {
+    background-color: transparent;
+
+  }
+
+  .el-table,
+  .el-table th,
+  .el-table tr,
+  .el-table td {
+    background-color: transparent;
+    color: #bbc1ce;
+  }
+
+  .el-pagination__total {
+    color: #bbc1ce;
+  }
+
+  .el-pager li {
+    background-color: transparent;
+    color: #bbc1ce;
+  }
+
+  .el-pager li.active {
+    color: #409EFF;
+  }
+
+  .el-pagination .btn-next,
+  .el-pagination .btn-prev {
+    color: #bbc1ce;
+    background-color: transparent;
+  }
+
+  .hover-row {
+    background-color: #000000;
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #25489c;
+  }
+
+}
+
+.el-select-dropdown {
+  border: 1px solid #4394e478;
+  background-color: #13192F;
+
+  .el-select-dropdown__item {
+    color: #ffffffaa;
+
+  }
+  .el-select-dropdown__item.hover{
+    background-color: #516bc6;
+  }
+}
+
+
+
+
+
+// #50e3c2
+
+
+
+// #303133

@@ -1,0 +1,246 @@
+// 将element table的 下滑线去掉
+body .el-table th.gutter {
+  display: table-cell !important;
+
+  #app {
+
+    /* Chrome */
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      .el-table--medium th {
+        padding: 11px 0;
+      }
+    }
+  }
+}
+
+// 编写修改UI后的样式代码
+// input 新修改的UI样式
+.search-input-auto {
+  width: auto;
+  margin: 10px;
+
+  .el-input__inner {
+    background: transparent;
+  }
+}
+
+.search-select-auto {
+  margin-right: 10px;
+
+  .el-input__inner {
+    background: transparent;
+  }
+}
+
+.el-card {
+  border: 2px solid #2e6099;
+  background-color: #0d1223;
+}
+
+.el-card__header {
+  border-bottom: 1px solid #2e6099;
+}
+
+
+
+
+
+.card-10px {
+  .el-card__body {
+    padding: 10px;
+
+    .el-input__inner {
+      border: 1px solid #2e6099;
+      color: #67c23a;
+      background-color: transparent;
+
+      .el-range-input {
+        background-color: transparent;
+        color: #67c23a;
+        ;
+      }
+    }
+
+    .el-input__inner:focus {
+      border: 1px solid #67c23a;
+    }
+
+    .el-select {
+      padding: 10px;
+
+      .el-input__inner {
+        background: transparent;
+      }
+    }
+  }
+}
+
+// 上面的图标框设置
+.select-button {
+  background: transparent;
+  border: 1px solid #2e6099;
+  color: #0080ff;
+}
+
+// 将table表格的斑马线设置
+.table-auto {
+  .el-table__row {
+    background: #0a2732 !important;
+  }
+
+  tr.hover-row {
+    >td {
+      background: #047eaa !important;
+    }
+  }
+
+  .el-table__row--striped {
+    background: #003b51 !important;
+
+    >td {
+      background: #003b51 !important;
+    }
+  }
+
+  .el-table td,
+  .el-table th.is-leaf {
+    border: none;
+  }
+
+  .el-table__row>td {
+    border: none;
+  }
+
+  .el-table::before {
+    //去掉最下面的那一条线
+    height: 0px;
+  }
+
+  .el-table__fixed-right::before {
+    height: 0;
+  }
+
+  .el-table__body tr.current-row>td {
+    background-color: #047eaa !important;
+  }
+
+  //  分页
+  .el-pagination__total {
+    color: #fff;
+  }
+
+  .el-select .el-input .el-select__caret {
+    color: #fff;
+  }
+
+  .el-pagination .el-select .el-input .el-input__inner {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #4f8bc7b4;
+  }
+
+  .el-pagination .btn-next,
+  .el-pagination .btn-prev {
+    background: transparent;
+    color: #fff;
+  }
+
+  .el-pagination button:disabled {
+    background: transparent;
+    color: rgba(211, 208, 208, 0.562);
+  }
+
+  .el-pager .number {
+    background: transparent;
+    color: #fff;
+  }
+
+  .el-pager li.btn-quicknext, .el-pager li.btn-quickprev{
+    background: transparent;
+    color: #fff;
+  }
+
+  .el-pagination__jump {
+    color: #fff;
+  }
+
+  .el-pagination__editor.el-input .el-input__inner {
+    background: transparent;
+    border: 1px solid rgba(153, 171, 238, 0.493);
+    color: #ddd;
+  }
+
+  .el-table__empty-block {
+    background: #003b51;
+
+    .el-table__empty-text {
+      color: #fff;
+    }
+  }
+}
+
+.el-dialog-louceng-class {
+
+  // background-color: #003b51;
+  .el-dialog {
+    background-color: #003b51;
+  }
+
+  .el-dialog__title {
+    color: white;
+  }
+
+  .has-gutter {
+    tr {
+      th {
+        background-color: #009cd3;
+      }
+    }
+  }
+}
+
+
+
+
+// -------------------------------树结构-----------------------
+.el-tree {
+  background: transparent;
+  color: #fff;
+
+  .el-checkbox__inner {
+    border: 1px solid #047eaa;
+    background-color: transparent;
+  }
+}
+
+.el-tree-node__content:hover {
+  background: #047eaa;
+}
+
+.el-tree-node:focus>.el-tree-node__content {
+  background: #047eaa;
+}
+
+.el-loading-parent--relative,
+.el-loading-fade-enter,
+.el-loading-fade-enter-to {
+  background: transparent !important;
+}
+
+// --------------------------自定义样式 ----------
+.table-tree-top {
+  font-size: 18px;
+  color: #fff;
+
+  .top-name {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+// ---------------------基础数据里面的地区管理 ---------------------
+.el-table {
+  .color-icon {
+    color: #fff;
+  }
+}

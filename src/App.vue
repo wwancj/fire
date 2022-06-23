@@ -13,6 +13,10 @@
   height: 100vh;
   // background: red;
 }
+
+body{
+  font-size: 64px;
+}
 </style>
 <script>
 // import homeIndex from "./views/Monitor/DataMonitor/index.vue";

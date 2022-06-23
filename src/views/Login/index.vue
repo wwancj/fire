@@ -130,7 +130,7 @@ export default {
     //     this.$refs.password.focus();
     //   });
     },
-    login(){
+    Login(){
         this.$router.push("/home")
     }
     // async handleLogin() {

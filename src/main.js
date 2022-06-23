@@ -16,6 +16,7 @@ import '@/style/style.scss'
 import '@/style/pgs.scss'
 import '@/style/auto.scss'
 import '@/style/customer.scss'
+import "@/components/flexible/index.js"
 // 引入大数据视图 dataV
 import dataV from '@jiaminghi/data-view'
 Vue.use(dataV)

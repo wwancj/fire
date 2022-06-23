@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { EquipLogLevel1 } from "@/api/home/EquipLog.js";
+// import { EquipLogLevel1 } from "@/api/home/EquipLog.js";
 
 export default {
   data() {
@@ -55,15 +55,16 @@ export default {
   },
   methods: {
     funSelectAllUnitGeneral() {
-      EquipLogLevel1().then((res) => {
-        //console.log(res);
-        //console.log(res);
-        this.huojing = res[0];
-        this.huojing1 = res[1];
-        this.guzhang = res[2];
-        this.guzhang1 = res[3];
-        this.flags = true;
-      });
+      // EquipLogLevel1().then((res) => {   
+      //   this.huojing = res[0];
+      //   this.huojing1 = res[1];
+      //   this.guzhang = res[2];
+      //   this.guzhang1 = res[3];
+      //   this.flags = true;
+      // });
+
+
+
     },
 
     // changeTiming() {

@@ -9,12 +9,7 @@
             <dv-decoration-8 :color="['#568aea', '#000000']" style="width: 2.5rem; height: 0.625rem" />
             <div class="title">
               <span class="title-text">中船长安智慧消防物联监控平台</span>
-              <!-- <dv-decoration-6
-                class="title-bototm"
-                :reverse="true"
-                :color="['#50e3c2', '#67a1e5']"
-                style="width: 3.125rem; height: 0.1rem"
-              /> -->
+        
             </div>
             <dv-decoration-8 :reverse="true" :color="['#568aea', '#000000']" style="width: 2.5rem; height: 0.625rem" />
           </div>
@@ -22,16 +17,27 @@
         </div>
       </div>
       <nav-bar></nav-bar>
+
+
+      
       <div :style="{ overflow: 'auto', 'overflow-x': 'hidden', height: heights }">
-        <router-view v-if="isRouterAlive"></router-view>
+        <router-view v-if="isRouterAlive">
+        
+        </router-view>
       </div>
+
+
+
+
       <!-- 退出登录模块 -->
       <div class="loginOut-class">
         <el-popover popper-class="popper-loginout-class" placement="bottom" trigger="hover">
           <!-- <el-button slot="reference">hover 激活</el-button> -->
           <!-- <div slot="reference" class="level1-class level1-active-class">{{item.text}}</div> -->
           <div slot="reference">
-            {{ $store.state.routersave.userInfo.userName }}
+            <!-- {{ $store.state.routersave.userInfo.userName }} -->
+            superAdmin
+
           </div>
           <div solt="center">
             <div class="loginout1-class" @click="changePassword">修改密码</div>
@@ -41,6 +47,8 @@
       </div>
     </dv-full-screen-container>
     
+
+    <!-- 修改密码模块 -->
     <el-dialog
       title="修改密码"
       :visible.sync="changePasswordDialogIsVisible"
@@ -95,7 +103,7 @@
 
 <script>
 import NavBar from "./components/NavBar";
-import { changeUserPassword } from "@/api/user/userList.js";
+// import { changeUserPassword } from "@/api/user/userList.js";
 
 export default {
   components: {

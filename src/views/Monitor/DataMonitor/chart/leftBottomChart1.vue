@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { getByHomeTimeDescNews, getByHomeTimeDescInstitution, getByHomeTimeDescPublicNotice } from "@/api/home/home.js";
+// import { getByHomeTimeDescNews, getByHomeTimeDescInstitution, getByHomeTimeDescPublicNotice } from "@/api/home/home.js";
 export default {
   data() {
     return {
@@ -87,20 +87,20 @@ export default {
       this.funGetByHomeTimeDescPublicNotice();
     },
     funGetByHomeTimeDescNews() {
-      getByHomeTimeDescNews().then((res) => {
-        this.newsList = res;
-        this.infosList = this.newsList;
-      });
+      // getByHomeTimeDescNews().then((res) => {
+      //   this.newsList = res;
+      //   this.infosList = this.newsList;
+      // });
     },
     funGetByHomeTimeDescInstitution() {
-      getByHomeTimeDescInstitution().then((res) => {
-        this.institutionList = res;
-      });
+      // getByHomeTimeDescInstitution().then((res) => {
+      //   this.institutionList = res;
+      // });
     },
     funGetByHomeTimeDescPublicNotice() {
-      getByHomeTimeDescPublicNotice().then((res) => {
-        this.publicNoticeList = res;
-      });
+      // getByHomeTimeDescPublicNotice().then((res) => {
+      //   this.publicNoticeList = res;
+      // });
     },
   },
 };
